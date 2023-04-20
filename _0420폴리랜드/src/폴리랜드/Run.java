@@ -89,19 +89,19 @@ public class Run {
 	public String Run5() {
 		Input.getINPUT_PRIORITY();
 		if(Input.getINPUT_PRIORITY() == 1) {
-			ticket_priority = " * 우대적용 없음";
+			ticket_priority = "*우대적용 없음";
 			final_ticketPrice = total_ticketPrice;
 		}else if(Input.getINPUT_PRIORITY() == 2) {
-			ticket_priority = " 장애인 우대적용";
+			ticket_priority = "*장애인 우대적용";
 			final_ticketPrice = (int) (total_ticketPrice * 0.4);
 		}else if(Input.getINPUT_PRIORITY() == 3) {
-			ticket_priority = " 국가유공자 우대적용";
+			ticket_priority = "*국가유공자 우대적용";
 			final_ticketPrice = (int) (total_ticketPrice * 0.5);
 		}else if(Input.getINPUT_PRIORITY() == 4) {
-			ticket_priority = " 다자녀 우대적용";
+			ticket_priority = "*다자녀 우대적용";
 			final_ticketPrice = (int) (total_ticketPrice * 0.2);
 		}else if(Input.getINPUT_PRIORITY() == 5) {
-			ticket_priority = " 임산부 우대적용";
+			ticket_priority = "*임산부 우대적용";
 			final_ticketPrice = (int) (total_ticketPrice * 0.15);
 		}
 		return ticket_priority;

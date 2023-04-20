@@ -1,8 +1,12 @@
 package 폴리랜드;
 
-public class Print {
+import java.text.DecimalFormat;
 
-Run run = new Run();
+public class Print {
+	DecimalFormat df = new DecimalFormat();
+	Run run = new Run();
+	private static int getPrice;
+	
 	
 
 	public void Print1() {
@@ -67,12 +71,30 @@ Run run = new Run();
 	}
 	//<OderList - 6> orderlist설정한 클래스 불러와서 for문 이용해 넣기 
 	public void Print7_7() {
+		System.out.println("-------------------------------------------------");
+		System.out.printf("%3s%8s%6s%6s%10s\n","시간","권종","수량","가격","우대사항");
+		System.out.println("-------------------------------------------------");
+		
 		Listsaving data1 = new Listsaving();
 		for(OrderList order : data1.getData()) {
-			System.out.printf("%s %s %d %d %s\n", order.getTicketTime(), order.getTicketType(), order.getTicketCount(),
-                 order.getFinal_ticketPrice(), order.getTicket_priority());
+			System.out.printf("%3s%7s%5d%10d%11s\n", order.getTicketTime(), order.getTicketType(), 
+					order.getTicketCount(),order.getFinal_ticketPrice(), order.getTicket_priority());
+			
+			getPrice += order.getFinal_ticketPrice(); //list의 가격 축적하기
         }
 	}
+		
+	public void Print_Total() { 
+		DecimalFormat format = new DecimalFormat("###,###,###,###,###,###,###");
+		int totalPrice = 0;
+		totalPrice = getPrice;
+		
+		System.out.println("-------------------------------------------------");
+		System.out.printf("%s\n","합 계");
+		System.out.printf("%47s%s\n", format.format(totalPrice),"원");
+		System.out.println("-------------------------------------------------");
+	}
+	
 }
 
 

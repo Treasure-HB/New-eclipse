@@ -8,13 +8,14 @@ public class Listsaving {
 	/* 자료형태 상관없이 내가 만들고싶은 배열 만들기*/
 	
 	//<OderList - 1> 객체 생성, 초기화 (전역변수처럼 선언)
-	public List<OrderList> data = new ArrayList<OrderList>();
+	public static List<OrderList> data = new ArrayList<OrderList>();
 	OrderList orderList = null;
 	
 	/*<OderList - 4> 내가 원하는 형태대로 인자를 받는 메소드 생성하고, orderlist전역변수와 메소드 인자 연결!
 	 *<OderList - 5> orderlist 객체에 add함수 이용하여 세트로 넣는 형태 취하기*/
 	
 	public void OrderList(String ticketTime, String ticketType, int ticketCount, int final_ticketPrice, String ticket_priority) {
+		
 		OrderList order = new OrderList();
 		order.setTicketTime(ticketTime);
 		order.setTicketType(ticketType);
