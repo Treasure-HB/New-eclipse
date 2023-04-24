@@ -15,7 +15,6 @@ public class Main {
 		do {
 			
 		repeat.Repeat();
-		peoplecount++;
 		
 		} while(input.getENDOPTION() == ConstValue.ENDOPTION);
 		
