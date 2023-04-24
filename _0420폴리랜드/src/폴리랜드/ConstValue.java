@@ -25,6 +25,8 @@ public class ConstValue {
 		public static int final_ticketPrice;//->기본요금 * 수량 * 우대사항 
 
 		public static int ENDOPTION = 1; //종료
+			
+		
 		
 	}
 

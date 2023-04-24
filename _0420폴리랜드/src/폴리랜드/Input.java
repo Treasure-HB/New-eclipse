@@ -48,6 +48,8 @@ public class Input {
 	public static int getENDOPTION() {
 		return ENDOPTION;
 	}
+	
+	
 }	
 	
 
