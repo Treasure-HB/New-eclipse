@@ -9,7 +9,7 @@ public class Main {
 		Input input = new Input();
 		Run run = new Run();
 		Print print = new Print();
-		peoplecount = 0;
+		
 		
 		
 		do {
@@ -23,15 +23,6 @@ public class Main {
 		print.Print_Total();
 		
 	}
-
-	public static int getPeoplecount() {
-		return peoplecount;
-	}
-
-	public static void setPeoplecount(int peoplecount) {
-		Main.peoplecount = peoplecount;
-	}	
-
 }
 
 

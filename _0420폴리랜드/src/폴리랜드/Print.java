@@ -91,7 +91,7 @@ public class Print {
 		
 		System.out.println("-------------------------------------------------");
 		System.out.printf("%s\n","합 계");
-		System.out.printf("%47s%s\n", format.format(totalPrice),"원");
+		System.out.printf("%47s%s\n", format.format(totalPrice),"원");//format이 숫자->문자로 바꿔주는거여서 굳이 미리 문자로 안바꿔도 됨
 		System.out.println("-------------------------------------------------");
 	}
 	
