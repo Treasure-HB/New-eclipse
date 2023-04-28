@@ -13,6 +13,13 @@ public class Run {
 	private static String ticket_priority;
 	Listsaving ls = null;
 	
+	public void ProgramChoice() {
+		Input input = new Input();
+		if(input.getINPUT_CHOICE() == 1) {
+			
+		}
+	}
+	
 	
 	public String Run1() {
 		Input input = new Input();
@@ -111,7 +118,6 @@ public class Run {
 	/*<OderList - 5> 기존에 설정한 전역변수와 orderlist 전역변수와 연결하기위해 
 	 * 기존전역변수 클래스에 orderlist 소환하고 순서대로 집어넣기*/
 	public void InsertOrderList() {
-//		Listsaving ls = new Listsaving();
 		ls = new Listsaving();
 		ls.OrderList(Run.getTicketTime(),Run.getTicketType(),Run.getTicketCount(),
 								+ Run.getFinal_ticketPrice(),Run.getTicket_priority());

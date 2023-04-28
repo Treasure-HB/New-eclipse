@@ -2,6 +2,8 @@ package 폴리랜드;
 
 public class ConstValue {
 
+		public static final String day = "주간권";
+		public static final String night = "야간권";
 		public static final String BABY = "유아";
 		public static final String CHILD = "소인";
 		public static final String TEEN = "청소년";

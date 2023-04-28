@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Input {
 
 	static Scanner scanner = new Scanner(System.in);
+	private static int INPUT_CHOICE;
 	private static int INPUT_TICKET_TIME;
 	private static String INPUT_PEOPLE_AGE;
 	private static int INPUT_TICKET_COUNT;
@@ -12,6 +13,9 @@ public class Input {
 	private static int ENDOPTION;
 	
 	//setter
+	public static void setINPUT_CHOICE() {
+		INPUT_CHOICE = scanner.nextInt();
+	}
 	public static void setINPUT_TICKET_TIME() {
 		INPUT_TICKET_TIME = scanner.nextInt();
 	}
@@ -29,6 +33,10 @@ public class Input {
 	}	
 	
 	//getter
+	public static int getINPUT_CHOICE() {
+		return INPUT_CHOICE;
+	}
+	
 	public static int getINPUT_TICKET_TIME() {
 		return INPUT_TICKET_TIME;
 	}

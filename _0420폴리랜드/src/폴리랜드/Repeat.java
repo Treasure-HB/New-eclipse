@@ -16,7 +16,8 @@ public class Repeat {
 			//컴퓨터 나라 설정
 			Locale currentLacale = Locale.getDefault();
 			System.out.println("locale : " + currentLacale.getCountry());
-			LANGUAGE = currentLacale.getCountry();
+			LANGUAGE = "en";
+					//currentLacale.getCountry();
 
 			//Stringvalue 함수 시작
 			stringvalue.startLanguage(getLANGUAGE());

@@ -1,16 +1,22 @@
 package 폴리랜드;
 
+import java.io.File;
 import java.text.DecimalFormat;
+import java.time.LocalDateTime;
 
 public class Print {
 	DecimalFormat df = new DecimalFormat();
+	Input input = new Input();
 	Run run = new Run();
 	private static int getPrice;
 	StringValue stringvalue = new StringValue();
 	
+	public void Print_Program() {
+		System.out.println("어떤프로그램을 선택하시겠습니까?");
+		System.out.println("1. 티켓발권");
+		System.out.println("2. 매출분석");
+	}
 	
-	
-
 	public void Print_Time() {
 		System.out.println(StringValue.getTICKET_TIME_QUESTION());
 	}
@@ -51,6 +57,9 @@ public class Print {
 		
 	public void Print_Orderlist() {
 		Listsaving data1 = new Listsaving();
+		File f = new File("C:\\Users\\HB\\Desktop\\김유두교수님\\0428 폴리랜드\\폴리랜드매출분석.csv");
+		
+		
 		for(OrderList order : data1.getData()) {
 			System.out.printf("%3s%7s%5d%10d%11s\n", order.getTicketTime(), order.getTicketType(), 
 					order.getTicketCount(),order.getFinal_ticketPrice(), order.getTicket_priority());
